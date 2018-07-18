@@ -1,2 +1,2 @@
-# Client-Specific-Equivalence-Checker.github.io
-CLEVER Home Page
+# client-specific-equivalence-checker.github.io
+CLEVER Project Website

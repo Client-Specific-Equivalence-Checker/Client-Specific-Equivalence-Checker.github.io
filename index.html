@@ -3,106 +3,157 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CLEVER</title>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/default.css" title="default">
+    <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <title>CLEVER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Muli', sans-serif;
+        }
+
+        a {
+            color: #164d85;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .navl {
+            display: block;
+            float: left;
+            margin-right: 1em;
+        }
+    </style>
 </head>
 
-<body>
-    <img id="id-picture" itemprop="image" src="./images/logo.png" alt="picture" width="80" height="110">
-    <h1>
-        CLEVER
-    </h1>
-    <ul class="topnav">
-        <li><a href="#subprojects">Subprojects</a></li>
-        <li><a href="#Example">Example</a></li>
-        <!--<li><a href="#backend">Backend</a></li> -->
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#people">People</a></li>
-    </ul>
+<body style="max-width: 850px; min-width: 750px; margin: 1.5em auto 4em auto">
+    <div class="container" style="max-width: 750px; min-width: 750px; margin: auto">
+        <div class="row">
+            <div class="col-3">
+                <img src="./images/logo.png" width="80" height="110" style="margin: 0.75em auto auto 1em">
+            </div>
+            <div class="col" style="margin: 3.5em auto auto auto">
+                <div class="row">
+                    <h1 style="margin-bottom: 0em">CLEVER</h1>
+                </div>
+                <div class="row">
+                    <ul style="margin: 0; padding: 0;">
+                        <li class="navl">
+                            <a href="#Publications">Publications</a>
+                        </li>
+                        <li class="navl">
+                            <a href="#Examples">Examples</a>
+                        </li>
+                        <li class="navl">
+                            <a href="#People">People</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-    <p class="hat">
-        The client-specific equivalence checking problem is that of determining whether a component update 
-        affects the overall system; the CLEVER (CLient EquiValence checkER) project aims to address this problem using a variety of (semi-)automated 
-        techniques.
-    </p>
+        <div class="row">
+            <div class="col">
+                <p style="margin: 2em 0em 2em 0em; font-size:110%">
+                The client-specific equivalence checking problem is that of
+                determining whether a component update affects the overall
+                system; the CLEVER (CLient EquiValence checkER) project aims to
+                address this problem using a variety of (semi-)automated
+                techniques.
+                </p>
+            </div>
+        </div>
 
-    <h2 id="subprojects">Subprojects</h2>
-    <div class="history">
-        <span class="date">CLEVER</span>
-        <p>
-            <a href="https://github.com/Client-Specific-Equivalence-Checker/CLEVER">CLEVER</a>, uses symbolic execution to compositionally summarize system components. CLEVER’s exploration
-            is guided by patterns we observed in a study of real-world software. Thanks to this, CLEVER outperforms the
-            state-of-the
-        </p>
-        <iframe width="448" height="252" src="https://www.youtube.com/embed/57tzjFIUDiU?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
-                allowfullscreen>
-        </iframe>
-    </div>
-    
-    <div class="history">
-        <span class="date">Future</span>
-        <p>
-            Moving forward we intend to develop new techniques that improve applicability and scalability in collaboration with our industrial
-            partners. Research directions include interactive verification with proof-assistants, and reasoning in the theory of
-            floating-point numbers.
-        </p>
-    </div>
+        <div class="row">
+            <div class="col">
+                <h2 id="Publications">Publications</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:1em">
+            <div class="col-2" style="text-align: right;">
+                ASE '18
+            </div>
+            <div class="col">
+                <a href="./papers/ase18.md">Client-Specific Equivalence Checking</a> <br>
+                F. Mora, Y. Li, J. Rubin, and M. Chechik
+            </div>
+        </div>
+        <br>
 
-    <h2 id="Example">Example</h2>
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTsvs57Ppog1S28P5ZY97eOc5tdS2PWohVmbsfXjN3DFDvgjCzoCkyVsMNnATECBcY3Cn2wk3PWeJ4j/embed?start=true&loop=true&delayms=3000"
-                - frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-    </iframe>
-    
-    <!--
-    <h2 id="backend">Backend</h2>
-    <p>
-        temp
-    </p> -->
+        <div class="row">
+            <div class="col">
+                <h2 id="Examples">Examples</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:1em">
+            <div class="col-2" style="text-align: right;">
+                Live
+            </div>
+            <div class="col">
+                <iframe width="448" height="252" src="https://www.youtube.com/embed/57tzjFIUDiU?rel=0" frameborder="0" gesture="media" allow="encrypted-media"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:1em">
+            <div class="col-2" style="text-align: right;">
+                Slides
+            </div>
+            <div class="col">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTsvs57Ppog1S28P5ZY97eOc5tdS2PWohVmbsfXjN3DFDvgjCzoCkyVsMNnATECBcY3Cn2wk3PWeJ4j/embed?start=true&loop=true&delayms=3000"
+                    - frameborder="0" width="448" height="252" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+        <br>
 
-    <h2 id="publications">Publications</h2>
-    <div class="history">
-        <span class="date">2017</span>
-        <p class="paper">
-            <a class="paper-title">
-                <span itemscope="" itemtype="http://schema.org/ScholarlyArticle">Client-Specific Equivalence Checking</span>
-            </a> 
-            (<a href="./papers/csec.pdf">draft</a>)
-        </p>
-        <p class="paper-details">
-            <span class="authors">
-                Yi Li, Federico Mora, Julia Rubin, Marsha Chechik.
-            </span>
-        </p>
-    </div>
+        <div class="row">
+            <div class="col">
+                <h2 id="People">People</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a href="https://federicoaureliano.github.io/">
+                    <figure style="text-align: center;">
+                        <img style="border-radius: 50%;" src="./images/federico.jpg" height="120" width="120">
+                        <figcaption>Federico Mora</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.cs.toronto.edu/~liyi/host/index.html">
+                    <figure style="text-align: center;">
+                        <img style="border-radius: 50%;" src="./images/yi.jpg" height="120" width="120">
+                        <figcaption>Yi Li</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.ece.ubc.ca/~mjulia/">
+                    <figure style="text-align: center;">
+                        <img style="border-radius: 50%;" src="./images/julia.jpg" height="120" width="120">
+                        <figcaption>Julia Rubin</figcaption>
+                    </figure>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="http://www.cs.toronto.edu/~chechik/">
+                    <figure style="text-align: center;">
+                        <img style="border-radius: 50%;" src="./images/marsha.jpg" height="120" width="120">
+                        <figcaption>Marsha Chechik</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
 
-    <h2 id="people">People</h2>
-    <div class="row">
-      <div class="col-sm-2">
-        <a href="https://federicoaureliano.github.io/"><img class="img-circle center-block img-responsive" src="./images/federico.jpg" height="120" width="120"></a>
-	<div class="caption text-center">Federico Mora</div>
-      </div>
-      <div class="col-sm-2">
-        <a href="http://www.cs.toronto.edu/~liyi/host/index.html"><img class="img-circle center-block img-responsive" src="./images/yi.jpg" height="120" width="120"></a>
-	<div class="caption text-center">Yi Li</div>
-      </div>
-      <div class="col-sm-2">
-        <a href="http://www.ece.ubc.ca/~mjulia/"><img class="img-circle center-block img-responsive" src="./images/julia.jpg" height="120" width="120"></a>
-	<div class="caption text-center">Julia Rubin</div>
-      </div>
-      <div class="col-sm-2">
-        <a href="http://www.cs.toronto.edu/~chechik/"><img class="img-circle center-block img-responsive" src="./images/marsha.jpg" height="120" width="120"></a>
-	<div class="caption text-center">Marsha Chechik</div>
-      </div>
     </div>
 
 </body>
-
-<footer id="footer">
-    <p>© University of Toronto 2017</p>
-</footer>
 
 </html>
